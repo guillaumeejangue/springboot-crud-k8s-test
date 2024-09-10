@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building the project...'
+                echo 'Building the project... master'
                 // Insert build commands here
             }
         }
