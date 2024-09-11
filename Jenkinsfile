@@ -10,7 +10,7 @@ pipeline {
     }
 
     environment {
-        KUBECONFIG = credentials('hetzner-k8s')  // Utiliser kubeconfig depuis les credentials de Jenkins
+        KUBECONFIG = credentials('hetzner-kubeconfig')  // Utiliser kubeconfig depuis les credentials de Jenkins
         BRANCH_NAME = "${env.GIT_BRANCH}"  // Récupérer le nom de la branche depuis l'environnement Git
         NAMESPACE = "my-app-${BRANCH_NAME}"  // Namespace basé sur le nom de la branche
     }
